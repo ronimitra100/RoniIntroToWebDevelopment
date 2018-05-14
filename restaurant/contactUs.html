@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Taj Mahal Cafe</h1>
+		<hr>
+		<p>
+			<a href="index.html" target="_blank">Home</a>
+			<a href="menu.html" target="_blank">Menu</a>
+			<a href="contactUs.html" target="self">ContactUs</a>
+		</p>
+		<hr>
+	</div>
+	<div class="content">
+		<form action="submit.html" action="POST">
+			<label for="customerName">Name:</label>
+			<input type="input" id="customerName" name="customerName"><br>
+			<label for="email">Email:</label>
+			<input type="input" id="email" name="email"><br>
+			<label for="phone">Phone:</label>
+			<input type="input" id="phone" name="phone"><br>
+			<label for="reason">Name:</label>
+			<select>
+				<option value="default" selected>Catering</option>
+				<option value="privateParty">Private Party</option>
+				<option value="feedback">Feeback</option>
+				<option value="other">Other</option>
+			</select><br>
+			<label for="info">Additional Information:</label><br>
+			<textarea id="info"></textarea>	
+			<p>Have you been to the restaurant?
+				<input type="radio" id="no" selected>
+				<label for="no">No</label>
+				<input type="radio" id="yes" selected>
+				<label for="yes">Yes</label>	
+			</p>
+			<p>Best days to contact you:
+				<input type="checkbox" id="Mon">
+				<label for="Mon">M</label>
+				<input type="checkbox" id="Tue">
+				<label for="Tue">T</label>
+				<input type="checkbox" id="Wed">
+				<label for="Wed">W</label>
+				<input type="checkbox" id="Thu">
+				<label for="Thu">Th</label>
+				<input type="checkbox" id="Fri">
+				<label for="Fri">F</label>
+			</p>
+			<input type="submit" value="Send Request">
+		</form>
+	</div>	
+	<div class="footer">
+		<footer>
+			<hr>
+			<p>Washington Avenue #8561, Austin, TX, 78757</p>
+		</footer>
+	</div>
+</body>
+</html>

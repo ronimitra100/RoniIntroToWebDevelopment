@@ -1,0 +1,39 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #d5d2cb;
+}
+
+h1 {
+	font-size: 20px;
+	line-height: 40px;
+	color : #44749d;
+}
+
+h2 {
+	font-size: 14px;
+	line-height: 40px;
+	color : #5b7d87;
+}
+
+hr {
+	border-top: 3px dashed #5b7d87;
+	border-bottom: 3px solid #5b7d87;
+}
+
+a {
+	font-family: serif;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link {
+	color: #44749d;
+}
+
+a:hover {
+	color: #8c2238;
+}
+
+a:active {
+	color: #8c2238;
+}
