@@ -2,28 +2,50 @@
 <html lang="en">
 <head>
 	<title>Contact Us</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+	<style type="text/css">
+	.mandatory {
+		font-weight: bold;
+	}
+	body{
+		background-color: #ffcc99;
+	}
+	#submitButton{
+		background-color: #800000;
+		color: white;
+		font-weight: bold;
+		padding: 5px 5px 5px 5px;
+		border-top: 20px solid #ffcc99;
+	}
+	.content{
+		padding: 10px 10px 10px 10px;
+		}
+
+	form input, form select, form p{
+		border: 5px solid #ffcc99;
+	}
+	</style>
 </head>
 <body>
 	<div class="header">
 		<h1>Taj Mahal Cafe</h1>
 		<hr>
 		<p>
-			<a href="index.html" target="_blank">Home</a>
-			<a href="menu.html" target="_blank">Menu</a>
-			<a href="contactUs.html" target="self">ContactUs</a>
+			<a href="index.html" target="_blank" class="homeLink">Home</a>
+			<a href="menu.html" target="_blank" class="menuLink">Menu</a>
+			<a href="contactUs.html" target="self" class="contactUsLink">ContactUs</a>
 		</p>
 		<hr>
 	</div>
 	<div class="content">
 		<form action="submit.html" action="POST">
-			<label for="customerName">Name:</label>
-			<input type="input" id="customerName" name="customerName"><br>
-			<label for="email">Email:</label>
-			<input type="input" id="email" name="email"><br>
-			<label for="phone">Phone:</label>
-			<input type="input" id="phone" name="phone"><br>
-			<label for="reason">Name:</label>
+			<label for="customerName" class="mandatory">Name:</label>
+			<input type="input" id="customerName" name="customerName" required><br>
+			<label for="email" class="mandatory">Email:</label>
+			<input type="input" id="email" name="email" required><br>
+			<label for="phone" class="mandatory">Phone:</label>
+			<input type="input" id="phone" name="phone" required><br>
+			<label for="reason">Reason:</label>
 			<select>
 				<option value="default" selected>Catering</option>
 				<option value="privateParty">Private Party</option>
@@ -50,7 +72,7 @@
 				<input type="checkbox" id="Fri">
 				<label for="Fri">F</label>
 			</p>
-			<input type="submit" value="Send Request">
+			<input type="submit" value="Send Request" id="submitButton">
 		</form>
 	</div>	
 	<div class="footer">
